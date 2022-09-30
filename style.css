@@ -1,0 +1,401 @@
+/* Обнуление*/
+*{
+    padding: 0;
+    margin: 0;
+    border: 0
+    /* Для элементов которые имеют дефолтные отступы */
+}
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+    /* Стандартные значения html и body */
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+/*-------------------------*/
+
+body{
+    background-color: #111111;
+    background-image: url(source/bgc.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    width: 1300px;
+    height: auto;
+    margin: auto;
+}
+
+header{
+    height: 100px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    border-bottom: 1px solid #898989 ;
+}
+
+#button_right_description{
+    background-color: transparent;
+}
+
+#button_right_description:hover{
+    opacity: 0.6;
+}
+
+#inst{
+    height: 24px;
+    width: 24px;
+    background-image: url(source/inst.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#logo{
+    height: 40px;
+    width: 40px;
+    background-image: url(source/logo_image.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#description_button{
+    height: 21px;
+    width: 50px;
+    background-image: url(source/button_desc_image.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#nav_left, #nav_right{
+    width: 350px;
+    color: beige;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+}
+
+#nav_left a, #nav_right a{
+    color: #FFFFFF;
+}
+
+.main_description h1{
+    font-family: 'EB Garamond', serif;
+    font-size: 72px;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+}
+
+.main_description{
+    margin-top: 271px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_scroll_description{
+    margin-top: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_scroll_description p{
+    margin-left: 20px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+#image_scroll{
+    height: 30px;
+    width: 20px;
+    background-image: url(source/scroll_image.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.right_description{
+    transition-duration: 0.5s;
+    position: fixed;
+    right: -25%;
+    top: 0%;
+    background-color: #111111;
+    height: 100%;
+    width: 475px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right_description_container{
+    margin-top: 50px;
+    width: 315px;
+    height: 546px;
+}
+
+.right_description button{
+    height: 32px;
+    width: 32px;
+    background-image: url(source/close-icon.png);
+    background-color: transparent;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 180px;
+}
+
+.right_description_container p{
+    margin-top: 20px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.right_description_container h3{
+    margin-top: 70px;
+    font-family: 'EB Garamond', serif;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.some_text_one{
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.some_text_one p{
+    width: 856px;
+    line-height: 30px;
+    margin-top: 60px;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 27px;
+    color: #FFFFFF;
+}
+
+#some_photo_one{
+    height: 64px;
+    width: 80px;
+    background-image: url(source/some_photo.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.services_section{
+    margin-top: 100px;
+}
+
+#line_services{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+    
+}
+
+.type_service{
+    width: 416px;
+    height: 386px;
+    transition-duration: 0.3s;
+    margin: 20px;
+    
+}
+
+.type_service:hover{
+    margin: 0px;
+    width: 436px;
+    height: 406px;
+}
+
+.type_service p{
+    margin-top: 20px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 27px;
+    color: #FFFFFF;
+}
+
+.type_service div{
+    height: 300px;
+    width: 396px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+#service_photo_1{
+    background-image: url(source/services_photo_1.png);
+}
+
+#service_photo_2{
+    background-image: url(source/services_photo_2.png); 
+}
+
+#service_photo_3{
+    background-image: url(source/services_photo_3.png); 
+} 
+
+#service_photo_4{
+    background-image: url(source/services_photo_4.png); 
+} 
+
+#service_photo_5{
+    background-image: url(source/services_photo_5.png); 
+} 
+
+#service_photo_6{
+    background-image: url(source/services_photo_6.png); 
+} 
+
+.our_partners_section{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.our_partners_section div{
+    height: 144px;
+    width: 306px;
+}
+
+#partner_photo_1{
+    background-image: url(source/logo-4.png); 
+} 
+
+#partner_photo_2{
+    background-image: url(source/logo-1.png); 
+} 
+
+#partner_photo_3{
+    background-image: url(source/logo-2.png); 
+} 
+
+#partner_photo_4{
+    background-image: url(source/logo-3.png); 
+} 
+
+.our_works_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.our_works_section h1{
+    font-family: 'EB Garamond', serif;
+    font-size: 48px;
+    color: #FFFFFF;
+    margin-bottom: 100px;
+}
+
+.line_our_works div{
+    margin: 10px;
+    height: 416px;
+    width: 416px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.line_our_works{
+    display: flex;
+    justify-content: space-around;
+}
+
+#work_photo_1{
+    background-image: url(source/work-3.png); 
+}
+
+#work_photo_2{
+    background-image: url(source/work-6.png); 
+}
+
+#work_photo_3{
+    background-image: url(source/work-9.png); 
+}
+
+#work_photo_4{
+    background-image: url(source/work-8.png); 
+}
+
+#work_photo_5{
+    background-image: url(source/work-5.png); 
+}
+
+#work_photo_6{
+    background-image: url(source/work-2.png); 
+}
+
+#work_photo_7{
+    background-image: url(source/work-7.png); 
+}
+
+#work_photo_8{
+    background-image: url(source/work-4.png); 
+}
+
+#work_photo_9{
+    background-image: url(source/work-1.png); 
+}
+
+.and {
+    height: 30px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #898989;
+    border-bottom: 1px solid #898989 ;
+    margin-top: 100px;
+    height: 340px;
+}
+
+#contacts h3{
+    font-family: 'EB Garamond', serif;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+#contacts p{
+    margin-top: 20px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+#contacts #inst{
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
