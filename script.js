@@ -3,7 +3,7 @@ document.querySelector('#button_right_description_exit').onclick = buttonRightDe
 
 function buttonRightDescriptionExitClicked(){
     let div = document.querySelector('.right_description');
-    div.style.right = '-25%';
+    div.style.right = '-50%';
 }
 
 function buttonRightDescriptionClicked(){
@@ -14,6 +14,6 @@ function buttonRightDescriptionClicked(){
 window.addEventListener("scroll", ()=>{
     if(window.scrollY > 100){
         let div = document.querySelector('.right_description');
-        div.style.right = '-25%';
+        div.style.right = '-50%';
     }
 })

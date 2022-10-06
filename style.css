@@ -149,7 +149,7 @@ header{
 .right_description{
     transition-duration: 0.5s;
     position: fixed;
-    right: -25%;
+    right: -50%;
     top: 0%;
     background-color: #111111;
     height: 100%;
