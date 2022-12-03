@@ -399,3 +399,51 @@ footer{
     margin-top: 10px;
     margin-bottom: 60px;
 }
+
+#enter{
+    background-color: rgb(57, 57, 255);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+#registration{
+    background-color: rgb(38, 184, 38);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+#registration:hover{
+    background-color: rgb(24, 116, 24);
+}
+
+#enter:hover{
+    background-color: rgb(29, 29, 184);
+}
+
+#logIn{
+    background-color: white; 
+    color: #111111;
+    font-family: 'EB Garamond', serif;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+#welcome_description{
+    margin: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#login_name{
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'EB Garamond', serif;
+}
